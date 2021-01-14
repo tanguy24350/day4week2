@@ -35,7 +35,7 @@ end
 
 def handle_epenser
   puts "Quelle est la position dans l'array de la personne @epenser ?"
-  puts "Il est à la #{Arr.find_index("@epense")} position"
+  puts "Il est à la #{Arr.find_index("@epenser")} position"
 end
 
 def handle_loop
@@ -103,6 +103,7 @@ def main
             handle_loop()
             puts "              "
             sleep(1)
+            main()
         end
         if reponse == 9
           puts "Au revoir"
